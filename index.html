@@ -17,6 +17,19 @@
     <div id="wrapper">
         <div id="header">
             <h1>Plugin demo for jQuery sticky table headers</h1>
+            <h3>How to use this plugin</h3>
+            <p>Make sure you pull jquery and sticky.jquery in the HEAD area of your HTML document. Assign a id to the table you'd want to have sticky table headers enabled and call 'sticky' on it from inside document.ready:</p>
+            <p>
+    <pre>
+    &lt;script type="text/javascript" src="jquery.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="sticky.jquery.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+        $(document).ready(function(){
+            $("#myTable").sticky();
+        });
+    &lt;/script&gt;
+    </pre>
+            </p>
         </div>
         <div id="content">
             <table id="myTable">
@@ -46,7 +59,13 @@
                     }
                 </script>
             </table>
+            
+            <p>Note: If you have the 'thead' element and/or the 'tbody' elements added to the table then this plugin acts funky. Though you really don't need to define thead and tbody anyway.</p>
+        </div>
+        <div id="footer">
+            Plugin Author: <a href="http://walmik.info">Walmik</a>
         </div>
     </div>
+    
 </body>
 </html>
